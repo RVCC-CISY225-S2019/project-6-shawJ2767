@@ -2,291 +2,170 @@
 <html lang="en">
 
 <head>
-    <title>About Me</title>
     <meta charset="utf-8">
+    <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/nav-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- skip link -->
-    <a href="#main" class="skip">Skip to main</a>
-    <!-- start of header -->
-    <header id="header" class="header">
-        <nav class="navbar">
-            <span class="navbar-toggle" id="js-navbar-toggle">
-                <i id="symbol-toggle" class="fas fa-bars"></i>
-            </span>
-            <a href="#header" class="logo">
-                <div class="logo-container">
-                    <img class="logo" src="images/logo-1913689.svg" alt="Company Logo">
-                    <h1 class="page-title">Web Dev I</h1>
-                </div>
-            </a>
-            <ul class="main-nav" id="js-menu">
-                <li>
-                    <a href="#main" class="nav-links">Main</a>
-                </li>
-                <li>
-                    <a href="#about-me" class="nav-links">About Me</a>
-                </li>
-                <li>
-                    <a href="#pictures" class="nav-links">My Photos</a>
-                </li>
-                <li>
-                    <a href="#story" class="nav-links">A Story</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-links">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- end of header -->
-    <!-- start of main content -->
-    <!--    why put tabindex of -1 on skiplink target -  https://axesslab.com/skip-links/ -->
-    <main id="main" tabindex="-1" class="main">
-        <!-- start of bio section -->
+    <main class="main">
+        <header class="header">
+            <div class="content">
+                <img class="logo main-col" src="images/logo-1913689.svg" alt="Company Logo">
+                <div class="page-title">Web Dev I</div>
+            </div>
+        </header>
         <section class="hero">
             <div class="content">
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="images/lk-lrg.jpg">
-                    <source media="(min-width: 960px)" srcset="images/lk-med.jpg">
-                    <source media="(min-width: 640px)" srcset="images/lk-small.jpg">
-                    <img class="profile" src="images/lk-xsmall.jpg" alt="This is a picture of me">
+                    <source media="(min-width: 1024px)" srcset="images/me-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/me-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/me-small.jpg">
+                    <img class="my-picture" src="images/me-small.jpg" alt="This is a picture of me">
+
                 </picture>
-                <p class="my-name">Lyan Kent</p>
-                <p class="my-location">Branchburg, NJ</p>
+                <p class="my-name">Jonathan Shaw</p>
+                <p class="my-location">Hillsborough, NJ</p>
             </div>
         </section>
-        <section id="about-me" class="about-me">
+        <section class="about-me">
             <div class="content">
                 <div class="about-content">
                     <p class="iama">I want to be...</p>
-                    <p class="my-info">a web developer master!</p>
+                    <p class="my-info">A web developer</p>
                     <p class="iama">My favorite way to work is...</p>
-                    <p class="my-info">late at night with large headphones and lots of coffee.</p>
+                    <p class="my-info">At home, listening to my music.</p>
                     <p class="iama">In my free time, I like to...</p>
-                    <p class="my-info">run through the park, read sci-fi novels, and redesign my personal site using
-                        whatever new tech I want to learn.</p>
+                    <p class="my-info">Playing video games with my friends, watch movies, and making plans for my future.</p>
                 </div>
             </div>
         </section>
-        <!-- end of bio section -->
-        <div class="back-to-top">
-            <a href="#">Back to Top</a>
-        </div>
-        <!-- start of photo gallery -->
-        <section id="pictures" class="gallery">
-            <h1 class="gallery-title">My Abstract Photo Gallery</h1>
-            <figure class="fig1">
+
+        <section>
+
+            <figure>
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="images/fickle-1a-lrg.jpg">
-                    <source media="(min-width: 960px)" srcset="images/fickle-1a-med.jpg">
-                    <source media="(min-width: 640px)" srcset="images/fickle-1a-small.jpg">
-                    <img src="images/fickle-1a-xsmall.jpg" alt="an abstract photo">
+                    <source media="(min-width: 1024px)" srcset="images/Sky1026-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/Sky1026-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/Sky1026-small.jpg">
+                    <img class="pix" src="images/Sky1026-xsmall.jpg" alt="Sunrise at rvcc">
+
                 </picture>
-                <figcaption>Abstract Photo - Fickle Stream 1</figcaption>
+
+                <figcaption>A sunrise at the rvcc parking lot</figcaption>
+
             </figure>
             <hr>
-            <figure class="fig2">
+            <figure>
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="images/fickle-5-lrg.jpg">
-                    <source media="(min-width: 960px)" srcset="images/fickle-5-med.jpg">
-                    <source media="(min-width: 640px)" srcset="images/fickle-5-small.jpg">
-                    <img src="images/fickle-5-xsmall.jpg" alt="an abstract photo">
+                    <source media="(min-width: 1024px)" srcset="images/Sky1141-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/Sky1141-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/Sky1141-small.jpg">
+                    <img class="pix" src="images/Sky1141-xsmall.jpg" alt="Sunrise at rvcc">
                 </picture>
-                <figcaption>Abstract Photo - Fickle Stream 5</figcaption>
+                <figcaption>A sunset at rvcc</figcaption>
             </figure>
             <hr>
-            <figure class="fig3">
+            <figure>
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="images/fickle-6-lrg.jpg">
-                    <source media="(min-width: 960px)" srcset="images/fickle-6-med.jpg">
-                    <source media="(min-width: 640px)" srcset="images/fickle-6-small.jpg">
-                    <img src="images/fickle-6-xsmall.jpg" alt="an abstract photo">
+                    <source media="(min-width: 1024px)" srcset="images/Sky1142-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/Sky1142-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/Sky1142-small.jpg">
+                    <img class="pix" src="images/Sky1142-xsmall.jpg" alt="Sunrise at rvcc">
+
                 </picture>
-                <figcaption>Abstract Photo - Fickle Stream 6</figcaption>
+                <figcaption>A sunset at the rvcc parking lot</figcaption>
+
             </figure>
         </section>
-        <!-- end of photo gallery -->
-        <div class="back-to-top">
-            <a href="#">Back to Top</a>
-        </div>
-        <hr class="mobile-first">
-        <!-- start of Sherlock Holmes story -->
-        <article id="story" class="story">
-            <h1>Sherlock Holmes</h1>
-            <p>I was very angry, for this was the third demand during the month. 'You shall not have a farthing from
-                me,' I cried, on which he bowed and left the room without another word.</p>
+        <article>
+            <h1> The Adventures of Sherlock Holmes </h1>
+            <p>"I noted, in passing, that she had written a note before leaving home but after being fully dressed. You observed that her right glove was torn at the forefinger, but you did not apparently see that both glove and finger were stained with violet ink. She had written in a hurry and dipped her pen too deep. It must have been this morning, or the mark would not remain clear upon the finger. All this is amusing, though rather elementary, but I must go back to business, Watson. Would you mind reading me the advertised description of Mr. Hosmer Angel?"</p>
 
-            <p>When he was gone I unlocked my bureau, made sure that my treasure was safe, and locked it again. Then I
-                started to go round the house to see that all was secure--a duty which I usually leave to Mary but which
-                I thought it well to perform myself that night. As I came down the stairs I saw Mary herself at the side
-                window of the hall, which she closed and fastened as I approached.</p>
+            <p>I held the little printed slip to the light.</p>
 
-            <p>'Tell me, dad,' said she, looking, I thought, a little disturbed, 'did you give Lucy, the maid, leave to
-                go out to-night?'</p>
+            <p>"Missing," it said, "on the morning of the fourteenth, a gentleman named Hosmer Angel. About five ft. seven in. in height; strongly built, sallow complexion, black hair, a little bald in the centre, bushy, black side-whiskers and moustache; tinted glasses, slight infirmity of speech. Was dressed, when last seen, in black frock-coat faced with silk, black waistcoat, gold Albert chain, and grey Harris tweed trousers, with brown gaiters over elastic-sided boots. Known to have been employed in an office in Leadenhall Street. Anybody bringing--"</p>
 
-            <p>'Certainly not.'</p>
+            <p>"That will do," said Holmes. "As to the letters," he continued, glancing over them, "they are very commonplace. Absolutely no clue in them to Mr. Angel, save that he quotes Balzac once. There is one remarkable point, however, which will no doubt strike you."</p>
 
-            <p>'She came in just now by the back door. I have no doubt that she has only been to the side gate to see
-                someone, but I think that it is hardly safe and should be stopped.'</p>
+            <p>"They are typewritten," I remarked.</p>
 
-            <p>'You must speak to her in the morning, or I will if you prefer it. Are you sure that everything is
-                fastened?'</p>
+            <p>"Not only that, but the signature is typewritten. Look at the neat little 'Hosmer Angel' at the bottom. There is a date, you see, but no superscription except Leadenhall Street, which is rather vague. The point about the signature is very suggestive--in fact, we may call it conclusive."</p>
 
-            <p>'Quite sure, dad.'</p>
+            <p>"Of what?"</p>
 
-            <p>'Then, good-night.' I kissed her and went up to my bedroom again, where I was soon asleep.</p>
+            <p>"My dear fellow, is it possible you do not see how strongly it bears upon the case?"</p>
 
-            <p>I am endeavouring to tell you everything, Mr. Holmes, which may have any bearing upon the case, but I beg
-                that you will question me upon any point which I do not make clear."</p>
+            <p>"I cannot say that I do unless it were that he wished to be able to deny his signature if an action for breach of promise were instituted."</p>
 
-            <p>On the contrary, your statement is singularly lucid."</p>
+            <p>"No, that was not the point. However, I shall write two letters, which should settle the matter. One is to a firm in the City, the other is to the young lady's stepfather, Mr. Windibank, asking him whether he could meet us here at six o'clock tomorrow evening. It is just as well that we should do business with the male relatives. And now, Doctor, we can do nothing until the answers to those letters come, so we may put our little problem upon the shelf for the interim."</p>
 
-            <p>I come to a part of my story now in which I should wish to be particularly so. I am not a very heavy
-                sleeper, and the anxiety in my mind tended, no doubt, to make me even less so than usual. About two in
-                the morning, then, I was awakened by some sound in the house. It had ceased ere I was wide awake, but it
-                had left an impression behind it as though a window had gently closed somewhere. I lay listening with
-                all my ears. Suddenly, to my horror, there was a distinct sound of footsteps moving softly in the next
-                room. I slipped out of bed, all palpitating with fear, and peeped round the corner of my dressing-room
-                door.</p>
+            <p>I had had so many reasons to believe in my friend's subtle powers of reasoning and extraordinary energy in action that I felt that he must have some solid grounds for the assured and easy demeanour with which he treated the singular mystery which he had been called upon to fathom. Once only had I known him to fail, in the case of the King of Bohemia and of the Irene Adler photograph; but when I looked back to the weird business of the Sign of Four, and the extraordinary circumstances connected with the Study in Scarlet, I felt that it would be a strange tangle indeed which he could not unravel.</p>
 
-            <p>'Arthur!' I screamed, 'you villain! you thief! How dare you touch that coronet?'</p>
+            <p>I left him then, still puffing at his black clay pipe, with the conviction that when I came again on the next evening I would find that he held in his hands all the clues which would lead up to the identity of the disappearing bridegroom of Miss Mary Sutherland.</p>
 
-            <p>The gas was half up, as I had left it, and my unhappy boy, dressed only in his shirt and trousers, was
-                standing beside the light, holding the coronet in his hands. He appeared to be wrenching at it, or
-                bending it with all his strength. At my cry he dropped it from his grasp and turned as pale as death. I
-                snatched it up and examined it. One of the gold corners, with three of the beryls in it, was missing.
-            </p>
+            <p>A professional case of great gravity was engaging my own attention at the time, and the whole of next day I was busy at the bedside of the sufferer. It was not until close upon six o'clock that I found myself free and was able to spring into a hansom and drive to Baker Street, half afraid that I might be too late to assist at the dénouement of the little mystery. I found Sherlock Holmes alone, however, half asleep, with his long, thin form curled up in the recesses of his armchair. A formidable array of bottles and test-tubes, with the pungent cleanly smell of hydrochloric acid, told me that he had spent his day in the chemical work which was so dear to him.</p>
 
-            <p>'You blackguard!' I shouted, beside myself with rage. 'You have destroyed it! You have dishonoured me
-                forever! Where are the jewels which you have stolen?'</p>
+            <p>"Well, have you solved it?" I asked as I entered.</p>
 
-            <p>'Stolen!' he cried.</p>
+            <p>"Yes. It was the bisulphate of baryta."</p>
 
-            <p>'Yes, thief!' I roared, shaking him by the shoulder.</p>
+            <p>"No, no, the mystery!" I cried.</p>
 
-            <p>'There are none missing. There cannot be any missing,' said he.</p>
+            <p>"Oh, that! I thought of the salt that I have been working upon. There was never any mystery in the matter, though, as I said yesterday, some of the details are of interest. The only drawback is that there is no law, I fear, that can touch the scoundrel."</p>
 
-            <p>'There are three missing. And you know where they are. Must I call you a liar as well as a thief? Did I
-                not see you trying to tear off another piece?'</p>
+            <p>"Who was he, then, and what was his object in deserting Miss Sutherland?"</p>
 
-            <p>'You have called me names enough,' said he, 'I will not stand it any longer. I shall not say another word
-                about this business, since you have chosen to insult me. I will leave your house in the morning and make
-                my own way in the world.'</p>
+            <p>The question was hardly out of my mouth, and Holmes had not yet opened his lips to reply, when we heard a heavy footfall in the passage and a tap at the door.</p>
 
-            <p>'You shall leave it in the hands of the police!' I cried half-mad with grief and rage. 'I shall have this
-                matter probed to the bottom.'</p>
+            <p>This is the girl's stepfather, Mr. James Windibank," said Holmes. "He has written to me to say that he would be here at six. Come in!</p>
 
-            <p>'You shall learn nothing from me,' said he with a passion such as I should not have thought was in his
-                nature. 'If you choose to call the police, let the police find what they can.'</p>
+            <p>The man who entered was a sturdy, middle-sized fellow, some thirty years of age, clean-shaven, and sallow-skinned, with a bland, insinuating manner, and a pair of wonderfully sharp and penetrating grey eyes. He shot a questioning glance at each of us, placed his shiny top-hat upon the sideboard, and with a slight bow sidled down into the nearest chair.</p>
 
-            <p>By this time the whole house was astir, for I had raised my voice in my anger. Mary was the first to rush
-                into my room, and, at the sight of the coronet and of Arthur's face, she read the whole story and, with
-                a scream, fell down senseless on the ground. I sent the house-maid for the police and put the
-                investigation into their hands at once. When the inspector and a constable entered the house, Arthur,
-                who had stood sullenly with his arms folded, asked me whether it was my intention to charge him with
-                theft. I answered that it had ceased to be a private matter, but had become a public one, since the
-                ruined coronet was national property. I was determined that the law should have its way in everything.
-            </p>
+            <p>"Good-evening, Mr. James Windibank," said Holmes. "I think that this typewritten letter is from you, in which you made an appointment with me for six o'clock?"</p>
 
-            <p>'At least,' said he, 'you will not have me arrested at once. It would be to your advantage as well as
-                mine if I might leave the house for five minutes.'</p>
-
-            <p>'That you may get away, or perhaps that you may conceal what you have stolen,' said I. And then,
-                realising the dreadful position in which I was placed, I implored him to remember that not only my
-                honour but that of one who was far greater than I was at stake; and that he threatened to raise a
-                scandal which would convulse the nation. He might avert it all if he would but tell me what he had done
-                with the three missing stones.</p>
-
-            <p>'You may as well face the matter,' said I; 'you have been caught in the act, and no confession could make
-                your guilt more heinous. If you but make such reparation as is in your power, by telling us where the
-                beryls are, all shall be forgiven and forgotten.'</p>
-
-            <p>'Keep your forgiveness for those who ask for it,' he answered, turning away from me with a sneer. I saw
-                that he was too hardened for any words of mine to influence him. There was but one way for it. I called
-                in the inspector and gave him into custody. A search was made at once not only of his person but of his
-                room and of every portion of the house where he could possibly have concealed the gems; but no trace of
-                them could be found, nor would the wretched boy open his mouth for all our persuasions and our threats.
-                This morning he was removed to a cell, and I, after going through all the police formalities, have
-                hurried round to you to implore you to use your skill in unravelling the matter. The police have openly
-                confessed that they can at present make nothing of it. You may go to any expense which you think
-                necessary. I have already offered a reward of 1000 pounds. My God, what shall I do! I have lost my
-                honour, my gems, and my son in one night. Oh, what shall I do!"</p>
-
-            <p>He put a hand on either side of his head and rocked himself to and fro, droning to himself like a child
-                whose grief has got beyond words.</p>
-
-            <p>Sherlock Holmes sat silent for some few minutes, with his brows knitted and his eyes fixed upon the fire.
-            </p>
-
-            <p>Do you receive much company?" he asked.</p>
-
-            <p>None save my partner with his family and an occasional friend of Arthur's. Sir George Burnwell has been
-                several times lately. No one else, I think."</p>
-
-            <p>Do you go out much in society?"</p>
+            <p>"Yes, sir. I am afraid that I am a little late, but I am not quite my own master, you know. I am sorry that Miss Sutherland has troubled you about this little matter, for I think it is far better not to wash linen of the sort in public. It was quite against my wishes that she came, but she is a very excitable, impulsive girl, as you may have noticed, and she is not easily controlled when she has made up her mind on a point. Of course, I did not mind you so much, as you are not connected with the official police, but it is not pleasant to have a family misfortune like this noised abroad. Besides, it is a useless expense, for how could you possibly find this Hosmer Angel?"</p>
         </article>
-        <!-- end of Sherlock Holmes story -->
+
     </main>
-    <!-- end of main content -->
-    <div class="back-to-top">
-        <a href="#">Back to Top</a>
-    </div>
-    <hr class="mobile-first">
-    <!-- start of contact form -->
-    <section id="contact" class="form-container">
-        <h1>Get in Touch</h1>
-        <br class="mobile-first"><br class="mobile-first">
-        <div>
-            <form>
+    <section class="form-container">
+        <form class="contact" method="POST" action="https://formspree.io/SHAWJ289@GMAIL.COM">
+            <h1>Get In Touch</h1>
+            <fieldset>
+                <legend>Please feel free to contact me</legend>
+                <label for="email">Email</label>
+                <br>
+                <input id="email" type="email" name="email">
+                <br>
+                <br>
                 <fieldset>
-                    <legend>&nbsp;&nbsp; F O R M &nbsp;G O E S &nbsp; H E R E&nbsp;&nbsp;</legend>
-                    <br class="mobile-first"><br class="mobile-first">
-                    <p>
-                        &nbsp;L E F T&nbsp;&nbsp;E M P T Y&nbsp;&nbsp;O N&nbsp;&nbsp;P U R P O S E&nbsp;
-                    </p>
-                    <br class="mobile-first"><br class="mobile-first">
+                    <legend>Do you want a reply?</legend>
+                    <input type="radio" name="reply" id="yes" value="yes">
+                    <label for="yes">
+                    Yes</label>
+                    <br>
+                    
+                    <input type="radio" name="reply" id="no" value="no">
+                    <label for="no">No</label>
+                    <br>
+                    <br>
+
                 </fieldset>
-            </form>
-        </div>
+                <br>
+                <br>
+                <label for="message">Message</label>
+                <br>
+                <textarea id="message" name="message"></textarea>
+                <br>
+                <br>
+                <button type="submit">Send Message</button>
+            </fieldset>
+        </form>
     </section>
-    <!-- end of contact form -->
-    <!-- start of footer -->
-    <footer>
-        <br class="mobile-first"><br class="mobile-first">
-        <p> &copy; 2019 Lyan Kent</p>
-    </footer>
-    <div class="back-to-top">
-        <a href="#">Back to Top</a>
-    </div>
-    <!-- end of footer -->
-    <br class="mobile-first"><br class="mobile-first">
-    <!-- start of javascript for nav toggle -->
-    <script>
-        let mainNav = document.getElementById('js-menu');
-        let navBarToggle = document.getElementById('js-navbar-toggle');
-        let symbolToggle = document.getElementById('symbol-toggle');
-
-
-        navBarToggle.addEventListener('click', function () {
-            mainNav.classList.toggle('active');
-            if (symbolToggle.classList.contains('fa-bars')) {
-                symbolToggle.classList.remove('fa-bars');
-                symbolToggle.classList.add('fa-times');
-            } else {
-                symbolToggle.classList.remove('fa-times');
-                symbolToggle.classList.add('fa-bars');
-            }
-        });
-    </script>
-    <!-- end of javascript for nav toggle -->
+    <footer class="footer">&copy; 2019 Jonathan Shaw</footer>
 </body>
 
 </html>
