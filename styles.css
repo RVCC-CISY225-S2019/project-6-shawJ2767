@@ -1,0 +1,33 @@
+body {
+    font-family: 'Amiri', serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+}
+
+input, textarea, select, button {
+  width : 10rem;
+  margin: 0;
+
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+  overflow: hidden;
+}
+
+input:focus, textarea:focus {
+  background   : rgba(0,0,0,.1);
+  border-radius: 5px;
+  outline      : none;
+}
