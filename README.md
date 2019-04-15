@@ -26,3 +26,6 @@ You are going to have to download and add the files from your Project 5 into thi
 **You are expected to do the Week 9 reading as preparation for this assignment. Also you must use our CSS formatting rules from the CISY 225 Style Guide.**
 
 **You Must Have a Perfect Project 5 Repo. Make all changes to P5 before starting this project. Your grade depends on this. If you need help, ask me for help.**
+
+![First screen grab](https://github.com/RVCC-CISY225-S2019/project-6-shawJ2767/blob/master/readme-src/IMG_1391.PNG)
+
